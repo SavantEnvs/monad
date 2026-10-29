@@ -1,0 +1,9 @@
+project: savantenvs/monad
+target: trie-one-hundred-updates
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/trie-one-hundred-updates/testsuite
+cmds:
+  - cmd: /mayhem/trie-one-hundred-updates
+    libfuzzer: true
+    timeout: 30

@@ -1,0 +1,14 @@
+# Build context for mayhem/Dockerfile: the full repo incl. .git (the grader needs history), minus
+# local build output and the two multi-GB test-data submodules nothing in the build or oracle reads.
+build/
+out/
+*.o
+*.a
+*.so
+**/__pycache__/
+.DS_Store
+*.swp
+*~
+.claude/worktrees
+third_party/ethereum-tests
+third_party/monad-execution-specs

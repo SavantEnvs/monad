@@ -1,0 +1,9 @@
+project: savantenvs/monad
+target: staking-contract
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/staking-contract/testsuite
+cmds:
+  - cmd: /mayhem/staking-contract
+    libfuzzer: true
+    timeout: 30

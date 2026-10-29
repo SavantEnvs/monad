@@ -1,0 +1,9 @@
+project: savantenvs/monad
+target: compiler-fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/compiler-fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/compiler-fuzzer
+    libfuzzer: true
+    timeout: 30
